@@ -1,48 +1,26 @@
 {
-  "name": "ragemp-rp-frontend",
-  "version": "0.0.8",
-  "description": "Frontend part of RAGEMP RP Gamemode",
-  "homepage": ".",
+  "name": "rp-gamemode-frontend",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "vite",
-    "build:watch": "tsc && vite build --watch",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --ext .ts,.vue ."
   },
-  "author": "rShr0x",
-  "license": "MIT",
   "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@vitejs/plugin-react": "^4.3.0",
-    "classnames": "^2.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-toastify": "^9.1.3",
-    "sass": "^1.56.1",
-    "vite": "^5.2.11",
-    "vite-tsconfig-paths": "^4.3.2"
+    "@nuxt/ui": "^2.11.0",
+    "nuxt": "^3.10.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "globals": "^15.3.0",
-    "mobx": "^6.12.0",
-    "mobx-react-lite": "^3.4.0",
-    "typescript-eslint": "^7.10.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@types/node": "^20.11.10",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.20.0",
+    "sass": "^1.69.6",
+    "typescript": "^5.3.3"
   }
 }
